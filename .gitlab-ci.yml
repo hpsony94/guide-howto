@@ -1,0 +1,13 @@
+stages:
+- ansible
+
+ansible:
+  stage: ansible
+  trigger:
+    include: ansible/.gitlab-ci.yml
+    strategy: depend
+  rules:
+  - if: $CI_PIPELINE_SOURCE == "push"
+    changes:
+    - ansible/**/*
+  - if: $JOB == $CI_JOB_NAME
