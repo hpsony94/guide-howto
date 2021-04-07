@@ -27,6 +27,7 @@ docker exec -it ansible bash
 ```
 Now we are in Ansible container, let's play with it
 ```sh
+cd /home/app/
 export ANSIBLE_FORCE_COLOR="true"
 export ANSIBLE_CONFIG=./ansible.cfg
 # Setup SSH Tunnel to destination nodes
