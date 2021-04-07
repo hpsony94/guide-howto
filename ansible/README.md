@@ -17,7 +17,7 @@ docker version
 
 ## Setup
 ```sh
-git clone 
+git clone https://github.com/hpsony94/guide-howto
 cd ansible/
 cat <privatekey> > tmp/SSH_PRIVATE_KEY
 docker-compose up
