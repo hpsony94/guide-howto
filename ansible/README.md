@@ -19,6 +19,8 @@ docker version
 ```sh
 git clone https://github.com/hpsony94/guide-howto
 cd ansible/
+mkdir tmp
+touch tmp/SSH_PRIVATE_KEY
 cat <privatekey> > tmp/SSH_PRIVATE_KEY
 docker-compose up
 docker exec -it ansible bash
