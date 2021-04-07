@@ -22,7 +22,8 @@ cd ansible/
 mkdir tmp
 touch tmp/SSH_PRIVATE_KEY
 cat <privatekey> > tmp/SSH_PRIVATE_KEY
-docker-compose up
+docker-compose up -d
+docker ps
 docker exec -it ansible bash
 ```
 Now we are in Ansible container, let's play with it
