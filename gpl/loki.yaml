@@ -1,0 +1,14 @@
+loki:
+  image:
+    repository: grafana/loki
+    tag: 2.2.1
+  config:
+    table_manager:
+      retention_deletes_enabled: true
+      retention_period: 360h
+
+promtail:
+  enabled: true
+  image:
+    repository: grafana/promtail
+    tag: 2.2.1

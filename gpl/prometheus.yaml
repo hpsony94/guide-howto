@@ -1,0 +1,18 @@
+# Ref: https://github.com/prometheus-community/helm-charts/blob/main/charts/prometheus/values.yaml
+# Disable follow deployments due to use current 
+kubeStateMetrics:
+  enabled: true
+nodeExporter:
+  enabled: true
+  hostNetwork: false
+pushgateway:
+  enabled: false
+
+alertmanager:
+  enabled: false
+
+server:
+  retention: "7d"
+  persistentVolume:
+    enabled: true
+    readOnly: true

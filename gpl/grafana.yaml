@@ -1,0 +1,19 @@
+#ref: https://github.com/grafana/helm-charts/blob/main/charts/grafana/values.yaml
+image:
+  repository: grafana/grafana
+  tag: 8.0.5
+
+
+service:
+  enabled: true
+  type: LoadBalancer
+
+
+adminPassword: IxHdnnGJm3lNf
+
+persistence:
+  enabled: true
+  size: 1Gi
+
+
+
